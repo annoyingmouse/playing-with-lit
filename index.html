@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Boilerplate</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"
+          type="text/css">
+    <style>
+      #carousel {
+        width: 200px;
+        height: 200px;
+        user-select: none;
+      }
+
+      #carousel:not(:defined) > * {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <my-counter count="10">Hello World</my-counter>
+    <h2>motion-carousel</h2>
+    <motion-carousel id="carousel"
+                     selected="1">
+      <img src="https://picsum.photos/seed/1/200">
+      <img src="https://picsum.photos/seed/2/200">
+      <img src="https://picsum.photos/seed/3/200">
+      <img src="https://picsum.photos/seed/4/200">
+      <img src="https://picsum.photos/seed/5/200">
+      <img src="https://picsum.photos/seed/6/200">
+    </motion-carousel>
+    <hr/>
+    <my-element></my-element>
+    <hr/>
+    <list-element></list-element>
+    <script src="listElement.js"
+            type="module"></script>
+    <script src="myElement.js"
+            type="module"></script>
+    <script src="motion-carousel.js"
+            type="module"></script>
+    <script src="my-counter.js"
+            type="module"></script>
+  </body>
+</html>
